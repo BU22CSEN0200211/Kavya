@@ -1,0 +1,136 @@
+#include<stdio.h>
+int main()
+{
+    printf("hello world");
+    return 0;
+}                                OUT PUT:
+                                 hello world
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter number a:n");
+    scanf("%d",&a);
+    printf("enter number b:n");
+    scanf("%d",&b);
+    printf("the sum is %d:n",a+b);
+    return 0;
+}                                    OUT PUT:
+                                    enter number a:n 2
+                                    enter number b:n 3
+                                    the sum is 5:n
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("enter the value of a:");
+    scanf("%d",&a);
+    if(a>0)
+    {
+        printf("positive number:");
+    }
+    else
+    {
+        printf("negative number:");
+        return 0;
+    }
+}  
+
+
+
+#include<stdio.h>
+int main()
+{
+    int n1,n2,i,gcd;
+    printf("enter two integers:");
+    scanf("%d %d",&n1,&n2);
+    for(i=1;i<n1&&i<=n2;++i)
+    {
+        if(n1%i==0&& n2%i==0)
+        gcd=i;
+    }
+    printf("GCD of %d and %d is %d",n1,n2,gcd);
+    return 0;                                            OUT PUT:
+                                                        enter two integers:6 8
+                                                        GCD of 6 and 8 is 2
+}
+
+#include<stdio.h>
+int main()
+{
+    int fact,n,i;
+    printf("enter the value of n:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        fact=fact*i;
+        printf("factorial=%d",fact);
+    }
+    return 0;
+    }
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("eneter the value of a,b:");
+    scanf("%d %d",&a,&b);
+    c=a+b;
+    printf("Sum=%d",c);
+    return 0;
+    
+}
+
+
+
+#include<stdio.h>
+
+int main()
+{
+        int arr[5],i;
+        for(i=0; i<5; i++)
+        {
+                printf("Enter the value for arr[%d] : ",i);
+                scanf("%d", &arr[i]);
+        }
+        printf("The array elements are : \n");
+        for(i=0; i<5; i++)
+                printf("%d\t", arr[i]);
+        printf("\n");
+        return 0;
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+    int x, i = 0;
+    float avg = 0,y;
+
+    printf("Enter the number of elements to calculate average:\n");
+    scanf("%d", &x);
+
+    float numbers[x];
+    
+    for (i = 0; i < x; i++) {
+        scanf("%f", &numbers[i]);
+        avg += numbers[i];
+    }
+    
+    printf("\nThe average of the entered input numbers is: %f\n", avg);
+    return 0;
+}
+
+
+
+
+
+
+
+
